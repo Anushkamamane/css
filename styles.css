@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ca6d2e, #156241);
+  color: #4876aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+ 
+ 
+  
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #12273e;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #010c10;
+}
+
+input, textarea, button {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #0e3343;
+  font-size: 16px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #d48d57;
+  color: white;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #2d8e3d;
+  transform: scale(1.05);
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.option {
+  margin: 0 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.option img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.game-page {
+  text-align: center;
+  padding: 20px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+

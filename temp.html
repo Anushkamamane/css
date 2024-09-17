@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Constitutional Game</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Sign Up/Login Form -->
+        <div id="login-form" class="container">
+            <div class="form-card">
+                <h1>Welcome to the Constitutional Game</h1>
+                <p>Please Sign Up or Log In to Continue</p>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button onclick="login()">Submit</button>
+            </div>
+        </div>
+    
+        <!-- Choice Page -->
+        <div id="choice-page" class="container hidden">
+            <h1>Select Your Feild </h1>
+            <div class="options">
+                <div onclick="selectBranch('legislative')" class="option">
+                    <img src="j.png.webp" alt="Legislative">
+                    <!-- <a href="#"> <img  class="img1" src="j.png.webp" alt=""></a> -->
+                    <p>Legislative</p>
+                </div>
+                <div onclick="selectBranch('judiciary')" class="option">
+                    <img src="61ebebc8-f61f-43e5-935e-9ae0fe197d78.jpg" alt="Judiciary">
+                    <p>Judiciary</p>
+                </div>
+                <div onclick="selectBranch('executive')" class="option">
+                    <img src="living-in-style.webp" alt="Executive">
+                    <p>Executive</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game" class="game-page hidden">
+            <h1>Legislative Game</h1>
+            
+            <p>Imagine a scene of discussion in a vibrant assembly...</p>
+            <button onclick="startgame()">Start Game</button>
+            
+        </div>
+    
+        <!-- Game Pages -->
+        <div id="end-game" class="game-page hidden">
+            <h1>Legislative Game</h1>
+            
+            <p>Imagine a scene of discussion in a vibrant assembly...</p>
+            <button onclick="finishGame()">Finish Game</button>
+            
+        </div>
+    
+        <div id="game" class="game-page hidden">
+            <h1>Judiciary Game</h1>
+            <p>Be the judge in a courtroom scenario with compelling cases...</p>
+            <button onclick="finishGame()">Finish Game</button>
+        </div>
+    
+        <div id="game" class="game-page hidden">
+            <h1>Executive Game</h1>
+            <p>Make critical executive decisions and lead the nation...</p>
+            <button onclick="finishGame()">Finish Game</button>
+        </div>
+    
+        <!-- Feedback Form -->
+        <div id="feedback-form" class="container hidden">
+            <div class="form-card">
+                <h1>Feedback</h1>
+                <textarea placeholder="Provide your feedback here..."></textarea>
+                <button onclick="showLeaderboard()">Submit Feedback</button>
+            </div>
+        </div>
+    
+        <!-- Leaderboard -->
+        <div id="leaderboard" class="container hidden">
+            <div class="form-card">
+                <h1>Leaderboard</h1>
+                <p>See where you stand among the leaders!</p>
+            </div>
+          
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
